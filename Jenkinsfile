@@ -9,7 +9,10 @@ pipeline{
 			}
 			steps {
 				script{
-
+                    withSonarQubeEnv(credentialsId: 'cicd') {
+                        sh 'mvn clean package sonar:sonar'
+                        // some block
+                    }
 				}
 			}
 		}
