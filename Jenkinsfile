@@ -21,5 +21,7 @@ pipeline{
 		        script{
 		            waitForQualityGate abortPipeline: false, credentialsId: 'cicd1'
 		        }
+		    }
 		}
 	}
+}
