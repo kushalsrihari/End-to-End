@@ -12,11 +12,11 @@ pipeline{
             }
         }
         stage('Unit Test Maven'){
-                    steps{
-                        script{
-                            mvnTest()
-                        }
-                    }
+            steps{
+                script{
+                    mvnTest()
+                }
+            }
         }
     }
 }
