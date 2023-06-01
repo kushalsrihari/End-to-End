@@ -1,3 +1,5 @@
+@Library('Shared_Jenkins_vars') _
+
 pipeline{
     agent any
     stages{
